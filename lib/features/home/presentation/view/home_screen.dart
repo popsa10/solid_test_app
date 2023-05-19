@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:solid_test_app/core/app_constants.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
    Random random = Random();
    int index = 0;
    void changeIndex() {
-     setState(() => index = random.nextInt(3));
+     setState(() => index = random.nextInt(AppConstants.maxNumber));
    }
 
 
